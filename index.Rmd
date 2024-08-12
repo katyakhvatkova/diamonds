@@ -1,0 +1,19 @@
+---
+title: "Test"
+output: html_document
+date: "2024-08-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(ggplot2)
+data(diamonds)
+ggplot(diamonds, aes(carat, depth)) + 
+  geom_point()
+```
+
+
